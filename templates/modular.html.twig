@@ -1,0 +1,24 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<div class="container">
+	<article class="region--main">
+		{{ page.content }}
+		{% for module in page.collection() %}
+			{% if module.header.sidebar != true %}
+		    	<div id="{{ _self.pageLinkName(module.menu) }}"></div>
+		    	{{ module.content }}
+		    {% endif %}
+		{% endfor %}
+	</article>
+
+	<aside class="region--sidebar">
+		{% for module in page.collection() %}
+        	{% if module.header.sidebar == true %}
+	        	<div id="{{ _self.pageLinkName(module.menu) }}"></div>
+	        	{{ module.content }}
+	        {% endif %}
+    	{% endfor %}
+	</aside>
+</div>
+{% endblock %}

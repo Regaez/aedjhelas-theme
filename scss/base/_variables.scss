@@ -1,0 +1,51 @@
+/*
+ *
+ * COLORS
+ *
+ */
+
+// 
+// TEXT
+// 
+
+$colorTextBase: 				#555;
+$colorTextHeading: 				#222;
+$colorTextAnchor: 				#11B3DC;
+$colorTextAnchorHover: 			lighten(#11B3DC, 15%);
+
+$colorTextNavigation: 			#fff;
+$colorTextNavigationHover: 		#fff;
+
+$colorHeroText: 				#fff;
+
+$genericShadow: 				rgba(0,0,0,0.35);
+$genericBorder: 				#d2d2d2;
+
+/*
+ *
+ * SIZES
+ *
+ */
+
+// 
+// TEXT
+// 
+
+$sizeTextBase: 					1.5rem;
+$sizeTextHeading: 				5rem;
+$sizeTextHeading2: 				4rem;
+$sizeTextHeading3: 				3rem;
+$sizeTextHeading4: 				2.4rem;
+$sizeTextHeading5: 				1.8rem;
+$sizeTextHeading6: 				1.5rem;
+
+
+/*
+ *
+ * FONTS
+ *
+ */
+
+$fontHeading: 					'Julius Sans One', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+$fontBase: 						'Crimson Text', 'Times New Roman', serif;
+$fontNavigation: 				'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;

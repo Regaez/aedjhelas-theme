@@ -1,0 +1,29 @@
+.navigation {
+	float: right;
+	margin: 1.5rem 0;
+	padding: 0;
+	list-style: none;
+
+	.navigation__item {
+		float: left;
+
+		&.active .navigation__link {
+    		color: $colorTextNavigationHover;
+    		border-bottom: 2px solid $colorTextNavigationHover;
+    	}
+	}
+
+	.navigation__link {
+		display: block;
+	    padding: 1rem 0rem;
+    	margin: 0 1rem;
+		font-family: $fontNavigation;
+	    color: $colorTextNavigation;
+		border-bottom: 2px solid transparent;
+    
+    	&:hover {
+    		color: $colorTextNavigationHover;
+    		border-bottom: 2px solid $colorTextNavigationHover;
+    	}
+	}
+}

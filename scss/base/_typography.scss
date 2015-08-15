@@ -1,0 +1,71 @@
+html {
+	font-size: 62.5%;
+}
+
+body, p, li, ol, ul, blockquote, code, span, a {
+	font-family: $fontBase;
+	font-size: $sizeTextBase;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.3;
+	color: $colorTextBase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $fontHeading;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.5;
+    margin: 4rem 0 2.5rem 0;
+    color: $colorTextHeading;
+}
+
+h1 {
+	font-size: $sizeTextHeading;
+}
+
+h2 {
+	font-size: $sizeTextHeading2;
+}
+
+h3 {
+	font-size: $sizeTextHeading3;
+}
+
+h4 {
+	font-size: $sizeTextHeading4;
+}
+
+h5 {
+	font-size: $sizeTextHeading5;
+}
+
+h6 {
+	font-size: $sizeTextHeading6;
+}
+
+a {
+	color: $colorTextAnchor;
+	text-decoration: none;
+
+	&:hover {
+		color: $colorTextAnchorHover;
+		text-decoration: none;
+		border-bottom: 2px solid $colorTextAnchorHover;
+	}
+}
+
+strong, em {
+	line-height: 1;
+}
+
+blockquote {
+	padding: 1rem;
+	border-left: 2px solid $genericBorder;
+	margin: 1rem;
+}
+
+blockquote p {
+	margin: 0;
+	font-style: italic;
+}

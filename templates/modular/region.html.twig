@@ -1,0 +1,7 @@
+{{ content }}
+
+{% for region in page.find('/geography/regions').children %}
+    {% if region.header.continent|lower == page.parent.title|lower %}
+    	{{ region.content }}
+    {% endif %}
+{% endfor %}

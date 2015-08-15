@@ -1,0 +1,12 @@
+.module-hero {
+	min-height: 40rem;
+	padding: 12.5rem 0 4rem 0;
+	box-sizing: border-box;
+	background: url(../images/hero-landing.jpg) no-repeat 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+	h1, h2, h3, h4, h5, h6, p {
+		color: $colorHeroText;
+	}
+}

@@ -1,0 +1,30 @@
+div#breadcrumbs {
+	padding: 0;
+	margin-top: 2rem;
+
+	a {
+		border: none;
+		padding: 0 1rem;
+
+		span {
+			font-family: $fontNavigation;
+			color: $colorTextAnchor;
+			padding: 0;
+
+			&:hover {
+				color: $colorTextAnchorHover;
+				border-bottom: 2px solid $colorTextAnchorHover;
+			}
+		}
+	}
+
+	span {
+		font-family: $fontNavigation;
+		// color: $colorTextAnchor;
+	}
+
+	i {
+		background: url(../images/icon-arrow-right-grey.png) no-repeat 50%;
+		height: 1rem;
+	}
+}

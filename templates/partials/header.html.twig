@@ -1,0 +1,13 @@
+<nav class="global-header">
+    <div class="container">
+        <a href="/" class="site-logo">{{ site.title }}</a>
+        <ul class="navigation">
+            {% for page in pages.children %}
+            {% if page.visible %}
+            {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
+            <li class="navigation__item {{ current_page }}"><a class="navigation__link" href="{{ page.url }}">{{ page.menu }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</nav>
