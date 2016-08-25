@@ -1,4 +1,18 @@
 <section class="module-categories">
-	
-
+	<div class="container">
+		{{ content }}
+	</div>
+	<div class="container">
+		{% for category in header.categories %}
+		<div class="gallery four">
+			<h3 class="module-categories__title">{{ category.title }}</h3>
+			<p class="module-categories__description">{{ category.description }}</p>
+			<ul class="module-categories__list">
+			{% for link in category.links %}
+				<li class="module-categories__list-item"><a class="module-categories__link" href="{{ link.url }}">{{ link.label }}</a></li>
+			{% endfor %}
+			</ul>
+		</div>
+		{% endfor %}
+	</div>
 </section>

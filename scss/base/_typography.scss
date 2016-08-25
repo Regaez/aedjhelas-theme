@@ -30,6 +30,7 @@ h2 {
 
 h3 {
 	font-size: $sizeTextHeading3;
+	font-family: $fontBase;
 }
 
 h4 {
@@ -38,10 +39,12 @@ h4 {
 
 h5 {
 	font-size: $sizeTextHeading5;
+	font-family: $fontBase;
 }
 
 h6 {
 	font-size: $sizeTextHeading6;
+	font-family: $fontBase;
 }
 
 a {
@@ -52,7 +55,7 @@ a {
 		color: $colorTextAnchorHover;
 		text-decoration: none;
 		border-bottom: 2px solid $colorTextAnchorHover;
-	}
+	} 
 }
 
 strong, em {
