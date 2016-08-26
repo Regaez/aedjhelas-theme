@@ -1,6 +1,10 @@
 .container {
 	@include container();
-	padding: 0 4rem;
+	padding: 0 2rem;
+
+	@media (min-width: 600px) {
+		padding: 0 4rem;	
+	}
 }
 
 .column,

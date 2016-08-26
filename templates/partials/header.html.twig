@@ -1,3 +1,15 @@
+<!-- Mobile Navigation -->
+<div class="b-nav">
+    <a href="/" class="site-logo">{{ site.title }}</a>
+    <ul>
+        {% for page in pages.children %}
+        {% if page.visible %}
+        {% set current_page = (page.active or page.activeChild) ? 'b-link--active' : '' %}
+        <li><a class="b-link {{ current_page }}" href="{{ page.url }}">{{ page.menu }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
 <nav class="global-header">
     <div class="container">
         <a href="/" class="site-logo">{{ site.title }}</a>
@@ -10,4 +22,13 @@
             {% endfor %}
         </ul>
     </div>
+
+    <!-- Burger-Icon -->
+    <div class="b-container">
+        <div class="b-menu">
+            <div class="b-bun b-bun--top"></div>
+            <div class="b-bun b-bun--mid"></div>
+            <div class="b-bun b-bun--bottom"></div>
+        </div>
+    </div> 
 </nav>
