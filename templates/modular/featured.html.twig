@@ -1,13 +1,13 @@
 <section class="module-featured">
 	<div class="container">
-		{{ content }}
+		<h2>{{ header.title }}</h2>
 	</div>
 	<div class="container">
-		{% for article in header.articles %}
+		{% for article in page.collection() %}
 		<div class="gallery six">
-			<h3 class="module-featured__title">{{ article.title }}</h3>
-			<p class="module-featured__description">{{ article.description|markdown }}</p>
-			<h5 class="module-featured__link"><a href="{{article.url}}">Read more &gt;</a></h5>
+			<h3 class="module-featured__title">{{ article.parent.title }}</h3>
+			<p class="module-featured__description">{{ article.content }}</p>
+			<h5 class="module-featured__link"><a href="{{article.parent.url}}">Read more &gt;</a></h5>
 		</div>
 		{% endfor %}
 	</div>

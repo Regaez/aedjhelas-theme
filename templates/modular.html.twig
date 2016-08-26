@@ -6,7 +6,7 @@
 		{{ page.content }}
 		{% for module in page.collection() %}
 			{% if module.header.sidebar != true %}
-		    	<div id="{{ _self.pageLinkName(module.menu) }}"></div>
+		    	<div id="{{ module.header.title | hyphenize }}"></div>
 		    	{{ module.content }}
 		    {% endif %}
 		{% endfor %}
