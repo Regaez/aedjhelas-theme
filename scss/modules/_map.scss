@@ -1,0 +1,12 @@
+.module--map {
+
+	img {
+		border: 2px solid $colorBorderImage;
+	}
+}
+
+@media (min-width: 600px) {
+	section.module--map:first-of-type {
+	    padding-top: 12rem;
+	}
+}

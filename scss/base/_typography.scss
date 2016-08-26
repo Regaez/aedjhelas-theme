@@ -61,6 +61,14 @@ a {
 		text-decoration: none;
 		border-bottom: 2px solid $colorTextAnchorHover;
 	} 
+
+	&[rel=lightbox]{
+		border: none;
+
+		&:hover img {
+			border-color: $colorTextAnchorHover; 
+		}
+	}
 }
 
 strong, em {

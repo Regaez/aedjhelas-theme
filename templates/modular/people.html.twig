@@ -1,0 +1,10 @@
+<section class="module-people">
+	<h2 class="module-people__header">{{ header.title }}</h2>
+	{% for article in page.collection() %}
+	<div class="module-people__article">
+		<h3 class="module-people__title">{{ article.parent.title }} <span class="module-people__era">{{ article.header.era }}</span></h3>
+		{{ article.content }}
+		<h5 class="module-people__link"><a href="{{article.parent.url}}">Read more</a></h5>
+	</div>
+	{% endfor %}
+</section>
