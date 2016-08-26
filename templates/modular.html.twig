@@ -5,7 +5,7 @@
 	<article class="region--main">
 		{{ page.content }}
 		{% for module in page.collection() %}
-			{% if module.header.sidebar != true %}
+			{% if module.header.sidebar != true and module.header.hideInParent != true %}
 		    	<div id="{{ module.header.title|hyphenize }}"></div>
 		    	{{ module.content }}
 		    {% endif %}
@@ -14,7 +14,7 @@
 
 	<aside class="region--sidebar">
 		{% for module in page.collection() %}
-        	{% if module.header.sidebar == true %}
+        	{% if module.header.sidebar == true and module.header.hideInParent != true %}
 	        	<div id="{{ module.header.title|hyphenize }}"></div>
 	        	{{ module.content }}
 	        {% endif %}
