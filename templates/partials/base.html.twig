@@ -38,6 +38,19 @@
         {# include the header + navigation #}
         {% if header.exclude_navigation == false %}
         {% include 'partials/header.html.twig' %}
+        {% else %}
+        <!-- Mobile Navigation -->
+        <div class="b-nav">
+            <a href="/" class="site-logo">{{ site.title }}</a>
+            <ul>
+                {% for page in pages.children %}
+                {% if page.visible %}
+                {% set current_page = (page.active or page.activeChild) ? 'b-link--active' : '' %}
+                <li><a class="b-link {{ current_page }}" href="{{ page.url }}">{{ page.menu }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
         {% endif %}
 
         {% if header.exclude_breadcrumbs == false %}

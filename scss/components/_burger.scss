@@ -4,7 +4,7 @@ body:after {
 	bottom: -1px;
     height: auto;
     width: auto;
-    right: -1px;
+    right: 0;
 }
 
 body.open:after {
@@ -52,6 +52,10 @@ body.open:after {
 
 .b-bun {
 	background: $colorTextNavigation;
+
+	.module-hero & {
+	    background: $colorTextHeading;
+	}
 }
 
 .b-nav {
