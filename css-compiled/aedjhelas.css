@@ -493,11 +493,14 @@ li {
 
 .site-logo {
   float: left;
-  margin: 1.8rem 0 1.3rem 0;
+  margin: 1.2rem 0 1.3rem 0;
   padding: 1rem 1rem 1rem 0;
   font-family: "Julius Sans One", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 2rem;
   color: #fff; }
+  @media (min-width: 600px) {
+    .site-logo {
+      margin-top: 1.8rem; } }
   .site-logo:hover {
     border: 0;
     color: #fff; }
