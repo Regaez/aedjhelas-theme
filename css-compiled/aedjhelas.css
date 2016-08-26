@@ -593,6 +593,9 @@ body.open:after {
 
 .b-link {
   font-family: "Julius Sans One", "Open Sans", "Helvetica Neue", Helvetica, sans-serif; }
+  .b-link--active, .b-link:hover {
+    border-bottom: none;
+    color: #fff; }
 
 div#breadcrumbs {
   padding: 0;

@@ -94,4 +94,9 @@ body.open:after {
 
 .b-link {
 	font-family: $fontHeading;
+	
+	&--active, &:hover {
+		border-bottom: none;
+		color: $colorTextNavigation;
+	}
 }
