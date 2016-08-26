@@ -16,7 +16,8 @@
 //
 // IMPORT LAYOUTS
 //
-@import "layouts/global-header";
+@import "layouts/global-header",
+		"layouts/global-footer";
 
 // 
 // IMPORT COMPONENTS
@@ -29,4 +30,5 @@
 // 
 @import "modules/default",
 		"modules/categories",
+		"modules/featured",
 		"modules/hero";

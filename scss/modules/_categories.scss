@@ -1,16 +1,17 @@
 .module-categories {
+	padding: 2rem 0;
 
 	&__title {
 		margin: 0;
-		padding-right: 6rem;
+		padding-right: 4rem;
 	}
 
 	&__description {
-		padding-right: 6rem;
+		padding-right: 4rem;
 	}
 
 	&__list {
-		padding: 0;
+		padding: 0 4rem 0 0;
 		list-style: none;
 	}
 

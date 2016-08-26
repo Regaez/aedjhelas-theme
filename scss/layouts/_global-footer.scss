@@ -1,0 +1,9 @@
+.global-footer {
+	background: $colorBackgroundFooter;
+	padding: 2rem 0;
+
+	p {
+		margin: 0;
+		color: $colorTextFooter;
+	}
+}

@@ -5,154 +5,163 @@
 
 .column,
 .columns {
+	@include span(12 of 12);
+	
+	@media (min-width: 600px) {
+		&.one {
+			@include span(1 of 12);
 
-	&.one {
-		@include span(1 of 12);
-
-		&.last {
-			@include span(last 1 of 12);
+			&.last {
+				@include span(last 1 of 12);
+			}
 		}
-	}
 
-	&.two {
-		@include span(2 of 12);
-		
-		&.last {
-			@include span(last 2 of 12);
+		&.two {
+			@include span(2 of 12);
+			
+			&.last {
+				@include span(last 2 of 12);
+			}
 		}
-	}
 
-	&.three {
-		@include span(3 of 12);
-		
-		&.last {
-			@include span(last 3 of 12);
+		&.three {
+			@include span(3 of 12);
+			
+			&.last {
+				@include span(last 3 of 12);
+			}
 		}
-	}
 
-	&.four {
-		@include span(4 of 12);
-		
-		&.last {
-			@include span(last 4 of 12);
+		&.four {
+			@include span(4 of 12);
+			
+			&.last {
+				@include span(last 4 of 12);
+			}
 		}
-	}
 
-	&.five {
-		@include span(5 of 12);
-		
-		&.last {
-			@include span(last 5 of 12);
+		&.five {
+			@include span(5 of 12);
+			
+			&.last {
+				@include span(last 5 of 12);
+			}
 		}
-	}
 
-	&.six {
-		@include span(6 of 12);
-		
-		&.last {
-			@include span(last 6 of 12);
+		&.six {
+			@include span(6 of 12);
+			
+			&.last {
+				@include span(last 6 of 12);
+			}
 		}
-	}
 
-	&.seven {
-		@include span(7 of 12);
-		
-		&.last {
-			@include span(last 7 of 12);
+		&.seven {
+			@include span(7 of 12);
+			
+			&.last {
+				@include span(last 7 of 12);
+			}
 		}
-	}
 
-	&.eight {
-		@include span(8 of 12);
-		
-		&.last {
-			@include span(last 8 of 12);
+		&.eight {
+			@include span(8 of 12);
+			
+			&.last {
+				@include span(last 8 of 12);
+			}
 		}
-	}
 
-	&.nine {
-		@include span(9 of 12);
-		
-		&.last {
-			@include span(last 9 of 12);
+		&.nine {
+			@include span(9 of 12);
+			
+			&.last {
+				@include span(last 9 of 12);
+			}
 		}
-	}
 
-	&.ten {
-		@include span(10 of 12);
-		
-		&.last {
-			@include span(last 10 of 12);
+		&.ten {
+			@include span(10 of 12);
+			
+			&.last {
+				@include span(last 10 of 12);
+			}
 		}
-	}
 
-	&.eleven {
-		@include span(11 of 12);
-		
-		&.last {
-			@include span(last 11 of 12);
+		&.eleven {
+			@include span(11 of 12);
+			
+			&.last {
+				@include span(last 11 of 12);
+			}
 		}
-	}
-
-	&.twelve {
-		@include span(12 of 12);
 	}
 }
 
 .gallery {
-	&.one {
-		@include gallery(1 of 12);
-	}
+	@include span(12 of 12);
 
-	&.two {
-		@include gallery(2 of 12);
-	}
+	@media (min-width: 600px) {
+		&.one {
+			@include gallery(1 of 12);
+		}
 
-	&.three {
-		@include gallery(3 of 12);
-	}
+		&.two {
+			@include gallery(2 of 12);
+		}
 
-	&.four {
-		@include gallery(4 of 12);
-	}
+		&.three {
+			@include gallery(3 of 12);
+		}
 
-	&.five {
-		@include gallery(5 of 12);
-	}
+		&.four {
+			@include gallery(4 of 12);
+		}
 
-	&.six {
-		@include gallery(6 of 12);
-	}
+		&.five {
+			@include gallery(5 of 12);
+		}
 
-	&.seven {
-		@include gallery(7 of 12);
-	}
+		&.six {
+			@include gallery(6 of 12);
+		}
 
-	&.eight {
-		@include gallery(8 of 12);
-	}
+		&.seven {
+			@include gallery(7 of 12);
+		}
 
-	&.nine {
-		@include gallery(9 of 12);
-	}
+		&.eight {
+			@include gallery(8 of 12);
+		}
 
-	&.ten {
-		@include gallery(10 of 12);
-	}
+		&.nine {
+			@include gallery(9 of 12);
+		}
 
-	&.eleven {
-		@include gallery(11 of 12);
-	}
+		&.ten {
+			@include gallery(10 of 12);
+		}
 
-	&.twelve {
-		@include gallery(12 of 12);
+		&.eleven {
+			@include gallery(11 of 12);
+		}
 	}
 }
 
 .region--main {
-	@include span(8 of 12);
+	@include span(12 of 12);
+	padding: 0 0 4rem 0;
+
+	@media (min-width: 600px) {
+		@include span(8 of 12);
+	}
 }
 
 .region--sidebar {
-	@include span(last 4 of 12);
+	@include span(12 of 12);
+	padding: 0 0 4rem 0;
+
+	@media (min-width: 600px) {
+		@include span(last 4 of 12);
+	}
 }

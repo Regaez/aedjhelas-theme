@@ -1,0 +1,14 @@
+<section class="module-featured">
+	<div class="container">
+		{{ content }}
+	</div>
+	<div class="container">
+		{% for article in header.articles %}
+		<div class="gallery six">
+			<h3 class="module-featured__title">{{ article.title }}</h3>
+			<p class="module-featured__description">{{ article.description|markdown }}</p>
+			<h5 class="module-featured__link"><a href="{{article.url}}">Read more &gt;</a></h5>
+		</div>
+		{% endfor %}
+	</div>
+</section>

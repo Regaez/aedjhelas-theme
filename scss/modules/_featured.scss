@@ -1,0 +1,13 @@
+.module-featured {
+	background: $colorBackgroundOffWhite; 
+	padding: 2rem 0;
+
+	&__title {
+		margin: 0;
+	}
+
+	&__link {
+		margin-top: 0;
+		font-family: $fontHeading;
+	}
+} 
