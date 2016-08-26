@@ -1,0 +1,21 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<div class="container">
+	<article class="region--main">
+		<section class="module-section">
+			{{ content }}
+			{% for child in page.children() %}
+			<div>
+				<h2 class="module-section__title">{{ child.title }}</h2>
+				<ul class="module-section__list">
+				{% for grandchild in child.children() %}
+					<li class="module-section__list-item"><a class="module-section__link" href="{{ grandchild.url }}">{{ grandchild.title }}</a></li>
+				{% endfor %}
+				</ul>
+			</div>
+			{% endfor %}
+		</section>
+	</article>
+</div>
+{% endblock %}
