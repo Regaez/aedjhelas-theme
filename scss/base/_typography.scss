@@ -85,3 +85,11 @@ blockquote {
 		font-style: normal;
 	}
 }
+
+li {
+	margin: .5rem 0;
+
+	a {
+		font-family: $fontHeading;
+	}
+}

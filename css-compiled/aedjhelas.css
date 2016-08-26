@@ -478,6 +478,11 @@ blockquote {
   blockquote em {
     font-style: normal; }
 
+li {
+  margin: .5rem 0; }
+  li a {
+    font-family: "Julius Sans One", "Open Sans", "Helvetica Neue", Helvetica, sans-serif; }
+
 .global-header {
   background: url(../images/header-bg.jpg) no-repeat 50%;
   -webkit-background-size: cover;
@@ -488,10 +493,10 @@ blockquote {
 
 .site-logo {
   float: left;
-  margin: 1.3rem 0;
+  margin: 1.8rem 0 1.3rem 0;
   padding: 1rem 1rem 1rem 0;
   font-family: "Julius Sans One", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #fff; }
   .site-logo:hover {
     border: 0;
@@ -503,6 +508,11 @@ blockquote {
   .global-footer p {
     margin: 0;
     color: #fff; }
+  .global-footer .back-to-top {
+    float: right;
+    font-family: "Julius Sans One", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    color: #fff;
+    border-color: #fff; }
 
 .navigation {
   float: right;

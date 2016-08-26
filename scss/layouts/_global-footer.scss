@@ -6,4 +6,11 @@
 		margin: 0;
 		color: $colorTextFooter;
 	}
+
+	.back-to-top {
+		float: right;
+		font-family: $fontHeading;
+		color: $colorTextFooter;
+		border-color: $colorTextFooter;
+	}
 }

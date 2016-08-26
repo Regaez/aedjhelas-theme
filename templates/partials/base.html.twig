@@ -33,7 +33,7 @@
         {% endblock head %}
     </head>
 
-      <body>
+      <body id="top">
 
         {# include the header + navigation #}
         {% if header.exclude_navigation == false %}
@@ -65,6 +65,7 @@
 
         <div class="global-footer">
             <div class="container">
+                <a href="#top" class="back-to-top">Back to top</a>
                 <p class="text-muted">Powered by <a href="http://getgrav.org">Grav</a></p>
             </div>
         </div>
