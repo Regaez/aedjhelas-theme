@@ -1,0 +1,38 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<div class="container">
+	<article class="region--main">
+		{{ page.content }}
+
+		{% for letter in 'a'..'z' %}
+		   	{% set items = [] %}
+
+			{% for child in page.children() %}
+				{% if letter == child.title|first|lower %}
+					{% set items = items|merge([child]) %}
+				{% endif %}
+			{% endfor %}
+
+			{% if 0 < items|length %}
+				<h2 id="{{letter}}">{{ letter|upper }}</h2>
+				<ul>
+				{% for item in items %}
+					<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+				{% endfor %}
+				</ul>
+			{% endif %}
+		{% endfor %}
+	
+	</article>
+
+	<aside class="region--sidebar">
+		{% for module in page.collection() %}
+        	{% if module.header.sidebar == true and module.header.hideInParent != true %}
+	        	<div id="{{ module.header.title|hyphenize }}"></div>
+	        	{{ module.content }}
+	        {% endif %}
+    	{% endfor %}
+	</aside>
+</div>
+{% endblock %}
