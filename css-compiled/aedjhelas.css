@@ -672,11 +672,16 @@ div#breadcrumbs {
 
 .module-hero {
   min-height: 40rem;
-  padding: 12.5rem 0 4rem 0;
+  padding: 4rem 0 4rem 0;
   box-sizing: border-box;
-  background: url(../images/hero-landing.jpg) no-repeat 50%;
+  background: url(../images/hero-landing.jpg) #46262B no-repeat 50%;
+  background-position-y: -75px;
   -webkit-background-size: cover;
   background-size: cover; }
+  @media (min-width: 600px) {
+    .module-hero {
+      padding: 12.5rem 0 4rem 0;
+      background-position-y: auto; } }
   .module-hero h1, .module-hero h2, .module-hero h3, .module-hero h4, .module-hero h5, .module-hero h6, .module-hero p {
     color: #fff; }
   .module-hero p {
