@@ -4,9 +4,9 @@
 @import "susy";
 // @import "vendors/normalize";
 
-// 
+//
 // IMPORT BASE STYLES
-// 
+//
 @import "base/variables",
 		"base/reset",
 		"base/fonts",
@@ -19,19 +19,19 @@
 @import "layouts/global-header",
 		"layouts/global-footer";
 
-// 
+//
 // IMPORT COMPONENTS
-// 
+//
 @import "components/navigation",
 		"components/burger",
 		"components/breadcrumbs";
 
-// 
+//
 // IMPORT MODULES
-// 
+//
 @import "modules/default",
 		"modules/categories",
 		"modules/featured",
 		"modules/hero",
-		"modules/people",
+		"modules/notable",
 		"modules/map";
