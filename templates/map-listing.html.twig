@@ -1,0 +1,33 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<div class="container">
+	<article class="region--main">
+		{{ page.content }}
+
+		<section class="module-listing">
+			<div class="container">
+			{% for child in page.children() %}
+				{% set module = page.find(child.url ~ '/_image') %}
+				<div class="gallery four">
+					<a href="{{child.url}}">
+						{{ module.content }}
+						<em>{{ child.title }}</em>
+					</a>
+				</div>
+			{% endfor %}
+			</div>
+		</section>
+	
+	</article>
+
+	<aside class="region--sidebar">
+		{% for module in page.collection() %}
+        	{% if module.header.sidebar == true and module.header.hideInParent != true %}
+	        	<div id="{{ module.header.title|hyphenize }}"></div>
+	        	{{ module.content }}
+	        {% endif %}
+    	{% endfor %}
+	</aside>
+</div>
+{% endblock %}
