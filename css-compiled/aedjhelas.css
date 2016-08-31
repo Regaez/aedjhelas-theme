@@ -689,6 +689,14 @@ div#breadcrumbs {
   .module-hero p {
     line-height: 1.5; }
 
+.module-section__list {
+  list-style: none;
+  padding-left: 2rem; }
+
+.module-listing__list {
+  list-style: none;
+  padding-left: 2rem; }
+
 .module-notable__header {
   margin-bottom: 0; }
 .module-notable__article {

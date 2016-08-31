@@ -5,6 +5,7 @@
 	<article class="region--main">
 		{{ page.content }}
 
+		<section class="module-listing">
 		{% for letter in 'a'..'z' %}
 		   	{% set items = [] %}
 
@@ -16,13 +17,14 @@
 
 			{% if 0 < items|length %}
 				<h2 id="{{letter}}">{{ letter|upper }}</h2>
-				<ul>
+				<ul class="module-listing__list">
 				{% for item in items %}
 					<li><a href="{{ item.url }}">{{ item.title }}</a></li>
 				{% endfor %}
 				</ul>
 			{% endif %}
 		{% endfor %}
+		</section>
 	
 	</article>
 
