@@ -1,0 +1,12 @@
+{% if 0 < page.collection()|length %}
+	<section class="module-regions">
+		{{ content }}
+		{% for region in page.collection() %}
+		<div class="module-regions__region">
+			<h3 class="module-regions__title">{{ region.parent.title }}</h3>
+			{{ region.content }}
+			<h5 class="module-regions__link"><a href="{{region.parent.url}}">Read more</a></h5>
+		</div>
+		{% endfor %}
+	</section>
+{% endif %}

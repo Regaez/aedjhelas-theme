@@ -1,0 +1,14 @@
+<section class="module-related-map">
+	<h2 class="module-related-map__header">{{ header.title }}</h2>
+	<div class="container">
+	{% for article in page.collection() %}
+		{% if article.parent != page.parent and article.header.hideInParent != true %}
+		<div class="module-related-map__article gallery six">
+			<a href="{{ article.parent.url}}">
+				{{ article.content }}
+			</a>
+		</div>
+		{% endif %}
+	{% endfor %}
+	</div>
+</section>

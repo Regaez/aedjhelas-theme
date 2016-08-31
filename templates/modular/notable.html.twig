@@ -1,3 +1,4 @@
+{% if 0 < page.collection()|length %}
 <section class="module-notable">
 	<h2 class="module-notable__header">{{ header.title }}</h2>
 	{% for article in page.collection() %}
@@ -8,3 +9,4 @@
 	</div>
 	{% endfor %}
 </section>
+{% endif %}

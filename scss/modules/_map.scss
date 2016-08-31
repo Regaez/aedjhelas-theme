@@ -1,12 +1,16 @@
-.module--map {
+.module-map, .module--map {
 
 	img {
 		border: 2px solid $colorBorderImage;
+
+		a:hover & {
+			border: 2px solid $colorTextAnchor;
+		}
 	}
 }
 
 @media (min-width: 600px) {
-	section.module--map:first-of-type {
+	section.module-map:first-of-type {
 	    padding-top: 12rem;
 	}
 }

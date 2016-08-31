@@ -81,6 +81,8 @@ img {
   @media (min-width: 600px) {
     .container {
       padding: 0 4rem; } }
+  .container .container {
+    padding: 0; }
 
 .column,
 .columns {
@@ -703,11 +705,29 @@ div#breadcrumbs {
   margin-top: 0;
   text-align: right; }
 
-.module--map img {
+.module-regions__header {
+  margin-bottom: 0; }
+.module-regions__region {
+  border-bottom: 1px solid #f3f4f5;
+  padding: 2rem 0 0 0; }
+.module-regions__title {
+  margin: 0; }
+.module-regions__era {
+  float: right;
+  font-style: italic;
+  font-size: 1.8rem;
+  line-height: 3; }
+.module-regions__link {
+  margin-top: 0;
+  text-align: right; }
+
+.module-map img, .module--map img {
   border: 2px solid #46262B; }
+  a:hover .module-map img, a:hover .module--map img {
+    border: 2px solid #11B3DC; }
 
 @media (min-width: 600px) {
-  section.module--map:first-of-type {
+  section.module-map:first-of-type {
     padding-top: 12rem; } }
 
 /*# sourceMappingURL=aedjhelas.css.map */
