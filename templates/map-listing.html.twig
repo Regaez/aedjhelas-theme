@@ -9,11 +9,11 @@
 			<div class="container">
 			{% for child in page.children() %}
 				{% set module = page.find(child.url ~ '/_image') %}
-				<div class="gallery four">
+				<div class="module-listing__item gallery four">
 					<a href="{{child.url}}">
 						{{ module.content }}
-						<em>{{ child.title }}</em>
 					</a>
+					<em>{{ child.title }}</em>
 				</div>
 			{% endfor %}
 			</div>

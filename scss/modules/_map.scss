@@ -7,6 +7,10 @@
 			border: 2px solid $colorTextAnchor;
 		}
 	}
+
+	.module-listing & p {
+		margin: 0;
+	}
 }
 
 @media (min-width: 600px) {

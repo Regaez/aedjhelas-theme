@@ -3,7 +3,7 @@
 	<div class="container">
 	{% for article in page.collection() %}
 		{% if article.parent != page.parent and article.header.hideInParent != true %}
-		<div class="module-related-map__article gallery six">
+		<div class="module-related-map__article gallery six--mobile">
 			<a href="{{ article.parent.url}}">
 				{{ article.content }}
 			</a>

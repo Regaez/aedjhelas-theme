@@ -4,4 +4,12 @@
 		list-style: none;
 		padding-left: 2rem;
 	}
+
+	&__item {
+		margin-bottom: 4rem;	
+
+		@media (min-width: 600px) {
+			margin-bottom: 2rem;
+		}
+	}
 }
