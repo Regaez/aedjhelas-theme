@@ -646,6 +646,9 @@ div#breadcrumbs {
     background: url(../images/icon-arrow-right-grey.png) no-repeat 50%;
     height: 1rem; }
 
+@media (min-width: 600px) {
+  .region--sidebar > section.module:first-of-type {
+    padding-top: 9rem; } }
 .module-categories {
   padding: 2rem 0; }
   .module-categories__title {
@@ -735,7 +738,7 @@ div#breadcrumbs {
     border: 2px solid #11B3DC; }
 
 @media (min-width: 600px) {
-  section.module-map:first-of-type {
-    padding-top: 12rem; } }
+  .region--sidebar > section.module-map:first-of-type {
+    margin-top: 3rem; } }
 
 /*# sourceMappingURL=aedjhelas.css.map */

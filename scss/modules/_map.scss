@@ -10,7 +10,7 @@
 }
 
 @media (min-width: 600px) {
-	section.module-map:first-of-type {
-	    padding-top: 12rem;
+	.region--sidebar > section.module-map:first-of-type {
+	    margin-top: 3rem;
 	}
 }
