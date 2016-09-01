@@ -753,6 +753,8 @@ div#breadcrumbs {
   border: 2px solid #46262B; }
   a:hover .module-map img, a:hover .module--map img {
     border: 2px solid #11B3DC; }
+.module-map > p, .module--map > p {
+  margin: 0; }
 .module-listing .module-map p, .module-listing .module--map p {
   margin: 0; }
 
