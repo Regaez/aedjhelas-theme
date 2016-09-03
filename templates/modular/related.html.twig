@@ -1,0 +1,14 @@
+<section class="module module-notable">
+	{% if header.hideTitle != true %}
+	<h2 class="module-notable__header">{{ header.title }}</h2>
+	{% endif %}
+
+	{% for article in page.collection() %}
+	<div class="module-notable__article">
+		{% set overview = page.find(article.url ~ '/_overview') %}
+		<h3 class="module-notable__title">{{ article.title }}</h3>
+		{{ overview.content }}
+		<h5 class="module-notable__link"><a href="{{article.url}}">Read more</a></h5>
+	</div>
+	{% endfor %}
+</section>

@@ -717,6 +717,9 @@ div#breadcrumbs {
     .module-listing__item {
       margin-bottom: 2rem; } }
 
+.module--writing p {
+  text-indent: 1.5rem; }
+
 .module-notable__header {
   margin-bottom: 0; }
 .module-notable__article {
