@@ -1,0 +1,13 @@
+{% if 0 < page.collection()|length %}
+<section class="module module-rulers">
+	{{ content }}
+	{% for article in page.collection() %}
+	<div class="module-rulers__article">
+	<h5 class="module-rulers__reign">Reign: <span>{{ article.header.reign }}</span></h5>
+		<h3 class="module-rulers__title">{{ article.parent.title }}</h3>
+		{{ article.content }}
+		<h5 class="module-rulers__link"><a href="{{article.parent.url}}">Read more</a></h5>
+	</div>
+	{% endfor %}
+</section>
+{% endif %}

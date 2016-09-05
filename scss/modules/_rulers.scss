@@ -1,0 +1,29 @@
+.module-rulers {
+
+	&__header {
+		margin-bottom: 0;
+	}
+
+	&__article {
+		border-bottom: 1px solid $genericBorder;
+		padding: 2rem 0 0 0;
+	}
+
+	&__title {
+		margin: 0;
+	}
+
+	&__reign {
+		float: right;
+		margin: 1rem 0 0 0;
+
+		span {
+			font-style: italic;
+		}
+	}
+
+	&__link {
+		margin-top: 0;
+		text-align: right;
+	}
+}
