@@ -17,11 +17,16 @@
 		float: right;
 		font-style: italic;
 		font-size: $sizeTextHeading5;
-		line-height: 3;
+		line-height: 3 * $mobileHeadingScaleFactor;
+
+		@media (min-width: 600px) {
+			line-height: 3;
+		}
 	}
 
 	&__link {
 		margin-top: 0;
 		text-align: right;
+		font-weight: normal;
 	}
 }

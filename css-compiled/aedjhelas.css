@@ -453,16 +453,31 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 5rem; }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 4rem;
+      margin: 3rem 0 2rem 0; } }
 
 h2 {
   font-size: 4rem; }
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 3.2rem;
+      margin: 3rem 0 1.5rem 0; } }
 
 h3 {
   font-size: 3rem;
   font-family: "Crimson Text", "Times New Roman", serif; }
+  @media (max-width: 600px) {
+    h3 {
+      font-size: 2.4rem;
+      margin: 2.5rem 0 1.5rem 0; } }
 
 h4 {
   font-size: 2.4rem; }
+  @media (max-width: 600px) {
+    h4 {
+      margin: 2.5rem 0 1.5rem 0; } }
 
 h5 {
   font-size: 1.8rem;
@@ -692,7 +707,7 @@ div#breadcrumbs {
   .module-featured__title {
     margin: 0; }
   .module-featured__link {
-    margin-top: 0;
+    margin: 0 0 3rem 0;
     font-family: "Julius Sans One", "Open Sans", "Helvetica Neue", Helvetica, sans-serif; }
 
 .module-hero {
@@ -725,12 +740,16 @@ div#breadcrumbs {
   margin: 0; }
 .module-rulers__reign {
   float: right;
-  margin: 1rem 0 0 0; }
+  margin: 0.5rem 0 0 0; }
+  @media (min-width: 600px) {
+    .module-rulers__reign {
+      margin: 1rem 0 0 0; } }
   .module-rulers__reign span {
     font-style: italic; }
 .module-rulers__link {
   margin-top: 0;
-  text-align: right; }
+  text-align: right;
+  font-weight: normal; }
 
 .module-listing__list {
   list-style: none;
@@ -755,10 +774,14 @@ div#breadcrumbs {
   float: right;
   font-style: italic;
   font-size: 1.8rem;
-  line-height: 3; }
+  line-height: 2.4; }
+  @media (min-width: 600px) {
+    .module-notable__era {
+      line-height: 3; } }
 .module-notable__link {
   margin-top: 0;
-  text-align: right; }
+  text-align: right;
+  font-weight: normal; }
 
 .module-regions__header {
   margin-bottom: 0; }
@@ -771,10 +794,14 @@ div#breadcrumbs {
   float: right;
   font-style: italic;
   font-size: 1.8rem;
-  line-height: 3; }
+  line-height: 2.4; }
+  @media (min-width: 600px) {
+    .module-regions__era {
+      line-height: 3; } }
 .module-regions__link {
   margin-top: 0;
-  text-align: right; }
+  text-align: right;
+  font-weight: normal; }
 
 .module-map img, .module--map img {
   border: 2px solid #46262B; }
