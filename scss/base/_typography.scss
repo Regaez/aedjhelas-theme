@@ -45,11 +45,20 @@ h4 {
 h5 {
 	font-size: $sizeTextHeading5;
 	font-family: $fontBase;
+	font-weight: 600;
+    margin: 3rem 0 1rem 0;
 }
 
 h6 {
 	font-size: $sizeTextHeading6;
 	font-family: $fontBase;
+	font-weight: 600;
+    margin: 2.5rem 0 1rem 0;
+}
+
+h5 + p,
+h6 + p {
+	margin-top: 0;
 }
 
 a {
