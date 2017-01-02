@@ -708,7 +708,8 @@ div#breadcrumbs {
     margin: 0; }
   .module-featured__link {
     margin: 0 0 3rem 0;
-    font-family: "Julius Sans One", "Open Sans", "Helvetica Neue", Helvetica, sans-serif; }
+    font-family: "Julius Sans One", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: normal; }
 
 .module-hero {
   min-height: 40rem;
