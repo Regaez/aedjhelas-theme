@@ -724,6 +724,9 @@ div#breadcrumbs {
       background-position-y: auto; } }
   .module-hero h1, .module-hero h2, .module-hero h3, .module-hero h4, .module-hero h5, .module-hero h6, .module-hero p {
     color: #fff; }
+  .module-hero h1 {
+    font-size: 5rem;
+    margin: 4rem 0 2.5rem 0; }
   .module-hero p {
     line-height: 1.5; }
 
